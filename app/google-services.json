@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1042041038645",
+    "firebase_url": "https://cloudnoteappkeepcolornotespad.firebaseio.com",
+    "project_id": "cloudnoteappkeepcolornotespad",
+    "storage_bucket": "cloudnoteappkeepcolornotespad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042041038645:android:c21927b9c8fa1756",
+        "android_client_info": {
+          "package_name": "zubayer.note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042041038645-u7vo8oqoegql9a1lp331hd2lr9snfr2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zubayer.note",
+            "certificate_hash": "276918ce6aa13fb95b8f8dbe896d01d00c83d17c"
+          }
+        },
+        {
+          "client_id": "1042041038645-v6l1ahsmmfi24p9db4ctn41gruh1dlv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8wH2c3IRo7lCWPALtRKsX6wGjfhvn6Y4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042041038645-v6l1ahsmmfi24p9db4ctn41gruh1dlv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
