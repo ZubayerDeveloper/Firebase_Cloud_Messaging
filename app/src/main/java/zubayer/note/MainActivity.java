@@ -19,6 +19,7 @@ import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.Profile;
+import com.facebook.appevents.AppEventsLogger;
 import com.facebook.internal.ImageRequest;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
         setContentView(R.layout.activity_main);
 
         genetatekeyHash();
@@ -73,12 +75,12 @@ public class MainActivity extends AppCompatActivity {
                             email.setText(object.getString("first_name") + " " + object.getString("last_name"));
                             birthday.setText(object.getString("email"));
 
-                            Glide.with(getApplicationContext()).load(ImageRequest.getProfilePictureUri(object.getString("id"),500,500).toString()).thumbnail(0.5f)
-                                    .into(imageView);
+                            Glide.with(getApplicationContext()).load("https://graph.facebook.com/"+object.getString("id")+"/picture?width=800").into(imageView);
                             Log.d("myresponse", loginResult.getAccessToken().getUserId());
-                            Log.d("myresponse", ImageRequest.getProfilePictureUri(object.getString("id"),500,500).toString());
+                            Log.d("myresponse", "https://graph.facebook.com/"+object.getString("id")+"/picture?width=800");
 
                         } catch (JSONException e) {
+
                             e.printStackTrace();
                         }
                                             }
